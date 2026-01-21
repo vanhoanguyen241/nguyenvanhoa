@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 16px;
+        color: black;
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        width: 500px;
+        height: 240px;
+        border: 5px black double;
+        margin: 10px auto;
+      }
+      header h2 {
+        text-align: center;
+      }
+      form {
+        margin-left: 10px;
+      }
+      label,input{
+        margin-bottom: 8px;
+      }
+      #ten_dang_nhap {
+        width: 180px;
+      }
+      .quan_tam{
+        display: block;
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>PHIẾU THĂM DÒ Ý KIẾN</h2>
+      </header>
+      <main>
+        <form>
+          <label for="ten_dang_nhap">Tên đăng nhập: </label>
+          <input type="text" id="ten_dang_nhap" />
+          <label for="gioi_tinh">Giới tính: </label>
+          <input type="radio" checked id="nam" name="gioi_tinh" />Nam
+          <input type="radio" id="nu" name="gioi_tinh" />Nữ
+          <br />
+          <label>Những mục bạn thường quan tâm trên Internet</label>
+          <br />
+          <div class="quan_tam">
+            <input type="checkbox" />Tin tức
+            <br />
+            <input type="checkbox" />Giải trí
+            <br />
+            <input type="checkbox" />Góc học tập
+            <br />
+            <input type="checkbox" />Các mục khác
+            <br />
+            <input type="submit" value="Gửi đi" />
+            <input type="reset" value="Phục hồi" />
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

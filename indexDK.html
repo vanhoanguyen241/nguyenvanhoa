@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 16px;
+        color: black;
+        margin: 0;
+        padding: 0px;
+      }
+      .container {
+        border: 2px black solid;
+        margin: 10px auto;
+        height: 660px;
+        width: 600px;
+      }
+      h2 {
+        color: blue;
+        text-align: center;
+      }
+      #hoten,
+      #dienthoai,
+      #email,
+      #nghe,
+      #trinhdo {
+        margin-bottom: 15px;
+        width: 380px;
+        padding: 8px 5px;
+        border: 1px lawngreen solid;
+      }
+      textarea {
+        border: 1px lawngreen solid;
+      }
+      label {
+        display: inline-block;
+        width: 120px;
+        text-align: right;
+        margin-right: 20px;
+        margin-bottom: 15px;
+      }
+      .nutgui,
+      .nutnhaplai {
+        margin-top: 80px;
+        margin-bottom: 12px;
+        height: 35px;
+        width: 88px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>ĐĂNG KÝ XÉT TUYỂN TRỰC TUYẾN BCTECH NĂM 2024</h2>
+      </header>
+      <main>
+        <form>
+          <label for="hoten">Họ tên </label>
+          <input
+            type="text"
+            id="hoten"
+            placeholder="Nhập họ tên của bạn"
+          /><br />
+          <label for="dienthoai">Điện thoại </label>
+          <input
+            type="tel"
+            id="dienthoai"
+            placeholder="Nhập điện thoại của bạn"
+          /><br />
+          <label for="email">Email </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Nhập email của bạn"
+          /><br />
+          <label for="phai">Phái </label>
+          <input type="radio" id="phai" name="phai" />Nam
+          <input type="radio" id="phai" name="phai" />Nữ
+          <br />
+          <label for="nghe">Nghề đăng ký</label>
+          <select id="nghe">
+            <option>Công nghệ thông tin</option>
+            <option>Thiết kế đồ hoạ</option></select
+          ><br />
+          <label for="trinhdo">Trình độ</label>
+          <select id="trinhdo">
+            <option>Cao đẳng</option>
+            <option>Trung cấp</option></select
+          ><br />
+          <label for="dangkykhac">Đăng ký khác </label>
+          <input type="checkbox" id="dangkykhac" />ký túc xá
+          <input type="checkbox" id="dangkykhac" />xuất ăn căn tin
+          <input type="checkbox" id="dangkykhac" />Học tiếng anh
+          <br />
+          <label for="gioithieu">Giới thiệu </label>
+          <textarea
+            id="gioithieu"
+            cols="57"
+            rows="6"
+            placeholder="Giới thiệu bản thân"
+          ></textarea
+          ><br />
+          <input class="nutgui" type="submit" value="Gửi đi" />
+          <input class="nutnhaplai" type="reset" value="Nhập lại" />
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

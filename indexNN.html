@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/Template.dwt" codeOutsideHTMLIsLocked="false" -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- InstanceBeginEditable name="doctitle" -->
+    <title>BCTech</title>
+    <!-- InstanceEndEditable -->
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+  </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      min-width: 100%;
+      margin: 0 auto;
+    }
+    header {
+      background-color: hsl(180, 100%, 25%);
+      min-height: 15vh;
+    }
+    .logoContainer img {
+      width: 400px;
+      height: auto;
+      margin: 10px 50px;
+    }
+    .searchContainer {
+      position: absolute;
+      top: 65px;
+      right: 5%;
+    }
+    .searchBar {
+      width: 120px;
+      border-radius: 5px;
+    }
+    .searchButton {
+      border-radius: 5px;
+      background-color: black;
+      color: white;
+      font-size: 12px;
+    }
+    .horizontalNav {
+      background-color: hsl(180, 100%, 11%);
+      min-height: 8vh;
+      border-radius: 5px;
+      display: flex; 
+      align-items: center; 
+    }
+    .navContents {
+      margin-left: 50px;
+    }
+    .navContents ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .navContents > ul > li {
+      display: inline-block;
+      position: relative;
+    }
+    .navContents a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+    }
+    .navContents > ul > li:hover > a {
+      background-color: yellow;
+      color: black;
+      text-decoration: underline;
+    }
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: hsl(180, 100%, 11%);
+      min-width: 200px;
+      z-index: 1;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .submenu li {
+      display: block;
+      border-bottom: 1px solid #ffffff33;
+    }
+    .submenu a {
+      padding: 10px 15px;
+      line-height: 15px;
+    }
+    .submenu li:hover a {
+      background-color: yellow;
+      color: black;
+      text-decoration: underline;
+    }
+    .navContents li:hover .submenu {
+      display: block;
+    }
+    main {
+      display: flex;
+    }
+    .verticalNav {
+      background-color: hsl(180, 100%, 80%);
+      width: 30%;
+      min-height: 70vh;
+    }
+    .dangKy {
+      margin: 8px 5px;
+    }
+    .dangKy p {
+      border: 2px dotted hsl(0, 67%, 60%);
+      color: red;
+      font-weight: bold;
+      text-align: center;
+      width: 100px;
+      padding: 5px 0;
+    }
+    .verticalNav fieldset {
+      margin: 10px 5px 10px 5px;
+      border: 1px dotted red;
+      padding-bottom: 10px;
+      min-height: 100px;
+    }
+    .verticalNav legend {
+      padding: 5px 20px 5px 20px;
+      border: 1px dotted red;
+      font-weight: bold;
+      color: red;
+    }
+    .verticalNav ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: inside;
+      list-style-type: square;
+    }
+    .verticalNav ul li {
+      padding: 5px 0px 5px 0px;
+      border-bottom: 1px dotted blue;
+    }
+    .verticalNav li:hover {
+      background-color: yellow;
+      border-bottom: medium double red;
+    }
+    .mainContents {
+      width: 70%;
+      min-height: 70vh;
+      flex-grow: 1;
+      background-color: hsl(60, 100%, 90%);
+    }
+    .mainContents h1,
+    .mainContents p {
+      margin: 10px 10px;
+      color: blue;
+    }
+    .mainContents .video {
+      margin: auto 10px;
+      width: 500px;
+      height: 220px;
+    }
+    footer {
+      background-color: hsl(180, 100%, 25%);
+      min-height: 7vh;
+    }
+    footer p {
+      margin: 0;
+      padding-top: 15px;
+      text-align: center;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logoContainer">
+          <img src="IMAGE/Logo.png" alt="Logo" />
+        </div>
+        <form class="searchContainer">
+          <input type="text" class="searchBar" />
+          <button class="searchButton">Tìm Kiếm</button>
+        </form>
+      </header>
+      <nav class="horizontalNav">
+        <div class="navContents">
+          <ul>
+            <li>
+              <a href="index.html">TRANG CHỦ</a>
+              <ul class="submenu">
+                <li><a href="index.html"> Tổng quan </a></li>
+                <li><a href="indexBGH.html"> Ban Giám hiệu </a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="indexTBTS.html">TUYỂN SINH</a>
+              <ul class="submenu">
+                <li><a href="indexTBTS.html"> Thông báo tuyển sinh </a></li>
+                <li><a href="indexNN.html"> Ngành nghề</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">SINH VIÊN</a>
+              <ul class="submenu">
+                <li><a href="#"> Thông báo - Kế hoạch </a></li>
+                <li><a href="#"> Lịch thi </a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">ĐĂNG KÝ HỌC</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+        <nav class="verticalNav">
+          <fieldset>
+            <legend>Đăng ký</legend>
+            <ul>
+              <li><a href="indexDN.html">ĐĂNG NHẬP</a></li>
+              <li><a href="indexDK.html">ĐĂNG KÝ NHẬP HỌC</a></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Giới thiệu Ngành nghề</legend>
+            <ul>
+              <li><a href="indexCNTT.html">CÔNG NGHỆ THÔNG TIN</a></li>
+              <li><a href="indexTKDH.html">THIẾT KẾ ĐỒ HOẠ</a></li>
+              <li><a href="indexMMT.html">MẠNG MÁY TÍNH</a></li>
+              <li><a href="indexDCN.html">ĐIỆN CÔNG NGHIỆP</a></li>
+              <li><a href="indexLH.html">LIÊN HỆ</a></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Liên thông</legend>
+            <ul>
+              <li><a href="indexSuPham.html">ĐH SƯ PHẠM KỸ THUẬT</a></li>
+              <li><a href="indexGTVT.html">ĐH GIAO THÔNG VẬN TẢI</a></li>
+            </ul>
+          </fieldset>
+        </nav>
+        <!-- InstanceBeginEditable name="EditRegion" -->
+        <div class="mainContents">
+          <h1>NGÀNH NGHỀ</h1>
+          <p>• Điện công nghiệp<p>
+          <p>• Cơ điện tử<p>
+          <p>• Kỹ thuật máy lạnh và điều hoà không khí<p>
+          <p>• Logistics<p>
+          <p>• Tiếng Anh<p>
+          <p>• Hàn<p>
+          <p>• Chế tạo thiết bị cơ khí<p>
+          <p>• Cắt gọt kim loại<p>
+          <p>• Chế tạo khuôn mẫu<p>
+          <p>• Công nghệ ô tô<p>
+          <p>• Thiết kế đồ hoạ<p>
+          <p>• Công nghệ thông tin<p>
+          <p>• Quản trị mạng máy tính<p>
+          <p>• Chế biến thực phẩm<p>
+          <p>• Kỹ thuật chế biến món ăn<p>
+        </div>
+        <!-- InstanceEndEditable --></main>
+      <footer>
+        <p>© 2026 Nguyễn Văn Hoà. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+<!-- InstanceEnd --></html>
